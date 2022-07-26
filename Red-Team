@@ -52,5 +52,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
     - **Exploit Used**
       - Once we have the hash values we crack them using John the Ripper
 ![john](./jpgs/Screen%20Shot%202022-07-23%20at%202.05.56%20PM.jpg)
-      - After John is finished we can log onto steven's user who has root access and gain root ourselves
+      - After John is finished we can log onto steven's account, he was not included in the sudoers group, but simply by guessing we were able to find the root login password as:
+      - Username: root
+      - Password: toor
 ![Got Root](./jpgs/FinalFlagRaven.jpg)
