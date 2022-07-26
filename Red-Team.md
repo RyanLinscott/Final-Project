@@ -39,16 +39,28 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
         ![ssh_michael_GitHub](https://user-images.githubusercontent.com/96896057/180901239-6bba5f41-7242-413c-a7d7-3c352ac368be.jpg)
 
   - `flag2.txt`{fcfd58dcdad9ab23faca6e9a36e581c}
-TODO:
+    ![flag2_GitHub](https://user-images.githubusercontent.com/96896057/180901877-b20cc13d-f233-4406-b8e8-7b0fb698572f.png)
     - **Exploit Used**
       - vulnerable Worpress server
     ![Flag2_GitHub](https://user-images.githubusercontent.com/96896057/180901445-deee105a-67b8-460b-b804-2bdd32d45b44.jpg)
+
+         ![MySQLServer_GitHub](https://user-images.githubusercontent.com/96896057/180903525-81afe1ee-4d33-4ccd-9947-013d46d828ca.jpg)
+
+    Once Inside Used Commands:
+    - show databases;
+    - use wordpress;
+    - show tables;
+    - select * from wp_posts;
+
     `flag3.txt`{afc01ab56b5091e7dccf93122770cd2}
+    ![flag3](https://user-images.githubusercontent.com/96896057/180903358-fefd2ed2-132e-4cf2-a75b-8e286d049e82.png)
     - **Exploit Used**
       - using the files discovered infiltrate the MySQL server
-TODO:![MySQL info](./jpgs/Screenshot%202022-07-23%20131649.jpg)
-TODO:![MySQL command](./jpgs/Screenshot%202022-07-23%20131558.jpg)
-TODO:![flag3](./jpgs/Screenshot%202022-07-23%20134422.jpg)
+        ![SQLServer_GitHub](https://user-images.githubusercontent.com/96896057/180902015-6bb7e167-829a-4323-9c8e-910bd2dff355.jpg)
+
+        ![MichaelSQL_GitHub](https://user-images.githubusercontent.com/96896057/180902156-83e19599-001d-47e7-9b8a-14b793358a46.jpg)
+
+        ![SQLContents_GitHub](https://user-images.githubusercontent.com/96896057/180902241-c9a80858-db0a-4a66-8007-ca2cda4b889f.jpg)
 TODO:![hash values](./jpgs/Screenshot%202022-07-23%20134525.jpg)
     `flag4.txt`{715ea6c055b9fe3337544932f291ce}
     - **Exploit Used**
