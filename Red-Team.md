@@ -76,23 +76,30 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
       DB_User: root
       DB_PASSWORD: R@v3nSecurity
       ```
-
-      ![MichaelSQL_GitHub](https://user-images.githubusercontent.com/96896057/180902156-83e19599-001d-47e7-9b8a-14b793358a46.jpg)
+We returned to michaels home directory then changed into the following directory:
+```
+/var/www/html/wordpress
+```
+Once inside that directory entered the follwoing to login as the user (-u) 'root' and prompt the user for the password (-p):
+```
+mysql -u 'root' -p
+```
+  ![MichaelSQL_GitHub](https://user-images.githubusercontent.com/96896057/180902156-83e19599-001d-47e7-9b8a-14b793358a46.jpg)
 Once logged in we used the command:
-      ```
-      select * from wp_users;
-      ```
+  ```
+  select * from wp_users;
+  ```
 This outputted the following information:
         ![SQLContents_GitHub](https://user-images.githubusercontent.com/96896057/180902241-c9a80858-db0a-4a66-8007-ca2cda4b889f.jpg)
     - **Exploit Used**
       - Once we have the hash values we crack them using John the Ripper
       ![John_GitHub](https://user-images.githubusercontent.com/96896057/181392772-36f44b53-c955-445e-adc8-5a77fed48129.png)
       - After John is finished we can log onto steven's account, he was not included in the sudoers group, but simply by guessing we were able to find the root login password as:
-      - Username: root
-      - Password: toor
-
-        ```
-        flag4.txt`{715ea6c055b9fe3337544932f291ce}
-        ```
-      
+  ```
+  Username: root
+  Password: toor
+  ```
+  ```
+  flag4.txt`{715ea6c055b9fe3337544932f291ce}
+  ```
   ![FinalFlagRaven](https://user-images.githubusercontent.com/96896057/181392857-f4ecb93d-9390-4421-821f-1639548f18f4.png)
