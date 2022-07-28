@@ -35,7 +35,7 @@ Trojan
     - Host name: ROTERDAM-PC$
     - IP address:172.16.4.205
     - MAC address: 00:59:07:b0:63:a4
-    ```
+
 
 2. What is the username of the Windows user whose computer is infected?
 ```
