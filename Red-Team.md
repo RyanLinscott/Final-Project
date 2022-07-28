@@ -46,12 +46,14 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
 
          ![MySQLServer_GitHub](https://user-images.githubusercontent.com/96896057/180903525-81afe1ee-4d33-4ccd-9947-013d46d828ca.jpg)
 
-    Once Inside Used Commands:
+    Once inside used Commands:
+    ```
     - show databases;
     - use wordpress;
     - show tables;
     - select * from wp_posts;
-
+    ```
+    
     `flag3.txt`{afc01ab56b5091e7dccf93122770cd2}
     ![flag3](https://user-images.githubusercontent.com/96896057/180903358-fefd2ed2-132e-4cf2-a75b-8e286d049e82.png)
     - **Exploit Used**
@@ -61,12 +63,13 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
         ![MichaelSQL_GitHub](https://user-images.githubusercontent.com/96896057/180902156-83e19599-001d-47e7-9b8a-14b793358a46.jpg)
 
         ![SQLContents_GitHub](https://user-images.githubusercontent.com/96896057/180902241-c9a80858-db0a-4a66-8007-ca2cda4b889f.jpg)
-TODO:![hash values](./jpgs/Screenshot%202022-07-23%20134525.jpg)
-    `flag4.txt`{715ea6c055b9fe3337544932f291ce}
     - **Exploit Used**
       - Once we have the hash values we crack them using John the Ripper
-TODO:![john](./jpgs/Screen%20Shot%202022-07-23%20at%202.05.56%20PM.jpg)
+      ![John_GitHub](https://user-images.githubusercontent.com/96896057/181392772-36f44b53-c955-445e-adc8-5a77fed48129.png)
       - After John is finished we can log onto steven's account, he was not included in the sudoers group, but simply by guessing we were able to find the root login password as:
       - Username: root
       - Password: toor
-TODO:![Got Root](./jpgs/FinalFlagRaven.jpg)
+
+      `flag4.txt`{715ea6c055b9fe3337544932f291ce}
+
+      ![FinalFlagRaven](https://user-images.githubusercontent.com/96896057/181392857-f4ecb93d-9390-4421-821f-1639548f18f4.png)
