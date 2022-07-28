@@ -69,9 +69,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
     ```
     ![flag3](https://user-images.githubusercontent.com/96896057/180903358-fefd2ed2-132e-4cf2-a75b-8e286d049e82.png)
     - **Exploit Used**
-      - Within the WordPress was also the file hashes for two users.
-        ![SQLServer_GitHub](https://user-images.githubusercontent.com/96896057/180902015-6bb7e167-829a-4323-9c8e-910bd2dff355.jpg)
-    To find the hashes for user login, we had to use the credentials of the root user of the server which were:
+      - Within the WordPress was also the file hashes for two users. To find the hashes for user login, we had to use the credentials of the root user of the server which were:
     ![MySQLServer_GitHub](https://user-images.githubusercontent.com/96896057/181641952-6f55dda6-e6aa-4aaa-ba2e-d43acc96449f.jpg)
 
       ```
