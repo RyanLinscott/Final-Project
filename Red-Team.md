@@ -58,7 +58,7 @@ flag1.txt`{b9bbcb33e11b80be759c4e844862482d}
       - Searching content of directories.
 
 
-We then ran a wpscan to enumerate the login information:
+We then ran a wpscan to enumerate user information:
 
 ![Flag2_GitHub](https://user-images.githubusercontent.com/96896057/180901445-deee105a-67b8-460b-b804-2bdd32d45b44.jpg)
 
