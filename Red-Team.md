@@ -45,19 +45,21 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
 flag1.txt`{b9bbcb33e11b80be759c4e844862482d}
 ```
 ![flag1_GitHub](https://user-images.githubusercontent.com/96896057/180901342-66075ffa-1e88-42cf-9166-1c5b888109db.png)
-    - **Exploit Used**
+- **Exploit Used**
       - ssh to users host after exploting vulnerable worpress server
         ![ssh_michael_GitHub](https://user-images.githubusercontent.com/96896057/180901239-6bba5f41-7242-413c-a7d7-3c352ac368be.jpg)
 
   ```
   flag2.txt`{fcfd58dcdad9ab23faca6e9a36e581c}
   ```  
-    ![flag2_GitHub](https://user-images.githubusercontent.com/96896057/180901877-b20cc13d-f233-4406-b8e8-7b0fb698572f.png)
-    - **Exploit Used**
+![flag2_GitHub](https://user-images.githubusercontent.com/96896057/180901877-b20cc13d-f233-4406-b8e8-7b0fb698572f.png)
+    
+- **Exploit Used**
       - Searching content of directories.
 
 
 We then ran a wpscan to enumerate the login information:
+
 ![Flag2_GitHub](https://user-images.githubusercontent.com/96896057/180901445-deee105a-67b8-460b-b804-2bdd32d45b44.jpg)
 
 We moved into the /var/www/html/wordpress/ directory and read the contents of the wp-config.php file to reveal the following useful information:
@@ -94,23 +96,23 @@ Browsing the output of the "select * from wp_posts" command gave use flag3 as sh
 flag3.txt`{afc01ab56b5091e7dccf93122770cd2}
 ```
 ![flag3](https://user-images.githubusercontent.com/96896057/180903358-fefd2ed2-132e-4cf2-a75b-8e286d049e82.png)
-    - **Exploit Used**
+- **Exploit Used**
       - We scanned the contents of the database to find the flag and also the users hashes, which were otained with the following command: 
-  ```
-  select * from wp_users;
-  ```
+```
+select * from wp_users;
+```
 This outputted the following information:
         ![SQLContents_GitHub](https://user-images.githubusercontent.com/96896057/180902241-c9a80858-db0a-4a66-8007-ca2cda4b889f.jpg)
-    - **Exploit Used**
+- **Exploit Used**
       - Once we have the hash values we copied them to a text file so we could crack them using John the Ripper offline.
 
-  ![John_GitHub](https://user-images.githubusercontent.com/96896057/181392772-36f44b53-c955-445e-adc8-5a77fed48129.png)
+![John_GitHub](https://user-images.githubusercontent.com/96896057/181392772-36f44b53-c955-445e-adc8-5a77fed48129.png)
 This gave us the password value of "pink84" for steven's account.  After John is finished we can log onto steven's account, he was not included in the sudoers group, but simply by guessing we were able to find the root login password as:
-  ```
-  Username: root
-  Password: toor
-  ```
-  ```
-  flag4.txt`{715ea6c055b9fe3337544932f291ce}
-  ```
+```
+Username: root
+Password: toor
+```
+```
+flag4.txt`{715ea6c055b9fe3337544932f291ce}
+```
   ![FinalFlagRaven](https://user-images.githubusercontent.com/96896057/181392857-f4ecb93d-9390-4421-821f-1639548f18f4.png)
