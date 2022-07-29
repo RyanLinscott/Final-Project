@@ -18,13 +18,14 @@ You must inspect your traffic capture to answer the following questions:
     ```
     june11.dll
     ```
+![mal_GitHub](https://user-images.githubusercontent.com/96896057/181854985-38360dbe-1a93-4aac-a873-30139f31dc9f.png)
 
 4. Upload the file to [VirusTotal.com](https://www.virustotal.com/gui/). 
 5. What kind of malware is this classified as? 
     ```
     Trojan
     ```
-
+![Network_Troj_GitHub](https://user-images.githubusercontent.com/96896057/181854940-2a9c15d5-13e4-4a17-925b-3167e496fe79.png)
 ---
 
 ## Vulnerable Windows Machine
@@ -40,12 +41,18 @@ You must inspect your traffic capture to answer the following questions:
     ```
     matthijs.devries
     ```
+![user_Windows_GitHub](https://user-images.githubusercontent.com/96896057/181855091-bab98803-16ce-4f27-8fee-78759d1abd3d.png)
+
 3. What are the IP addresses used in the actual infection traffic?
+
     ```
     172.12.4.205
     185.243.115.84
     166.62.11.64
     ```
+
+![WireShark_Convo_GitHub](https://user-images.githubusercontent.com/96896057/181855132-6c4fa8fd-04a2-493d-ab99-51fe10c5616f.png)
+
 4. As a bonus, retrieve the desktop background of the Windows host.
 
 ![desktop_GitHub](https://user-images.githubusercontent.com/96896057/181399648-f2e4a800-ab65-4ed3-a710-f8122a148893.png)
