@@ -75,7 +75,7 @@ DB_User: root
 DB_PASSWORD: R@v3nSecurity
 ```
 
-Once inside the process of finding the other flags was done enternig the following ccommands in this order:
+Once inside the process of finding the other flags was done entering the following ccommands in this order:
 ```
 show databases;
 ```
@@ -90,12 +90,12 @@ show tables;
 select * from wp_posts;
 ```
 Browsing the output of the "select * from wp_posts" command gave use flag3 as shown below.
-    ```
-    flag3.txt`{afc01ab56b5091e7dccf93122770cd2}
-    ```
-    ![flag3](https://user-images.githubusercontent.com/96896057/180903358-fefd2ed2-132e-4cf2-a75b-8e286d049e82.png)
+```
+flag3.txt`{afc01ab56b5091e7dccf93122770cd2}
+```
+![flag3](https://user-images.githubusercontent.com/96896057/180903358-fefd2ed2-132e-4cf2-a75b-8e286d049e82.png)
     - **Exploit Used**
-      - We scanned the contents of the database to find the flag and also the users hasshes, which were otained with the following command: 
+      - We scanned the contents of the database to find the flag and also the users hashes, which were otained with the following command: 
   ```
   select * from wp_users;
   ```
