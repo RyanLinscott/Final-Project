@@ -41,10 +41,10 @@ The following vulnerabilities were identified on each target:
 
 The Red Team was able to penetrate `Target 1` and retrieve the following confidential data:
 - Target 1
-  ```
-  flag1.txt`{b9bbcb33e11b80be759c4e844862482d}
-  ```
-    ![flag1_GitHub](https://user-images.githubusercontent.com/96896057/180901342-66075ffa-1e88-42cf-9166-1c5b888109db.png)
+```
+flag1.txt`{b9bbcb33e11b80be759c4e844862482d}
+```
+![flag1_GitHub](https://user-images.githubusercontent.com/96896057/180901342-66075ffa-1e88-42cf-9166-1c5b888109db.png)
     - **Exploit Used**
       - ssh to users host after exploting vulnerable worpress server
         ![ssh_michael_GitHub](https://user-images.githubusercontent.com/96896057/180901239-6bba5f41-7242-413c-a7d7-3c352ac368be.jpg)
