@@ -58,7 +58,11 @@ flag1.txt`{b9bbcb33e11b80be759c4e844862482d}
       - Searching content of directories.
 
 
-We then ran a wpscan to see what the site was vulnerable to:
+We then ran a wpscan to enumerate the users of the wordpress server:
+
+```
+wpscan --url http://192.168.1.110/wordpress --enumerate u
+```
 
 ![Flag2_GitHub](https://user-images.githubusercontent.com/96896057/180901445-deee105a-67b8-460b-b804-2bdd32d45b44.jpg)
 
